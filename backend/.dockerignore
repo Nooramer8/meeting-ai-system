@@ -1,0 +1,9 @@
+.env
+vendor
+public/storage
+storage/app/private/meetings
+storage/framework/cache/data
+storage/framework/sessions
+storage/framework/views
+storage/logs/*.log
+bootstrap/cache/*.php

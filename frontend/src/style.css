@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --app-bg: #eef4fb;
+  --app-surface: #ffffff;
+  --app-border: #dbe7f3;
+  --app-ink: #172033;
+  --app-muted: #607089;
+  --app-primary: #0f766e;
+  --app-primary-hover: #115e59;
+  --app-accent: #2563eb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 34rem),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 30rem),
+    var(--app-bg);
+  color: var(--app-ink);
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+.card {
+  @apply rounded-3xl border bg-white shadow-soft;
+  border-color: var(--app-border);
+}
+
+.btn-primary {
+  @apply rounded-2xl px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50;
+  background: var(--app-primary);
+}
+
+.btn-primary:hover {
+  background: var(--app-primary-hover);
+}
+
+.btn-secondary {
+  @apply rounded-2xl border bg-white px-4 py-2.5 text-sm font-semibold transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50;
+  border-color: var(--app-border);
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background: #f0f7ff;
+  color: var(--app-accent);
+}
+
+.input {
+  @apply w-full rounded-2xl border bg-white px-4 py-3 text-sm outline-none transition focus:ring-4;
+  border-color: var(--app-border);
+  color: var(--app-ink);
+}
+
+.input:focus {
+  border-color: var(--app-primary);
+  --tw-ring-color: rgba(15, 118, 110, 0.14);
+}
