@@ -1,0 +1,14 @@
+.git
+.env
+backend/.env
+frontend/.env
+backend/vendor
+frontend/node_modules
+frontend/dist
+backend/public/storage
+backend/storage/app/private/meetings
+backend/storage/framework/cache/data
+backend/storage/framework/sessions
+backend/storage/framework/views
+backend/storage/logs/*.log
+backend/bootstrap/cache/*.php

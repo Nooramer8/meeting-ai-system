@@ -6,7 +6,7 @@ Deploy this repository as a small monorepo on Railway.
 
 Create these Railway services from the same GitHub repository:
 
-- `backend`: root directory `backend`, Dockerfile deploy.
+- `backend`: deploy from the repository root. The root `Dockerfile` builds the Laravel API.
 - `frontend`: root directory `frontend`, Dockerfile deploy.
 - `queue`: root directory `backend`, Dockerfile deploy, start command:
   `php artisan queue:work --queue=meetings,emails,default --tries=1 --timeout=900`
